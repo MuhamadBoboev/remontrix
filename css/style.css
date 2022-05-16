@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "TT Norms Pro Regular";
+  src: local("TT Norms Pro Regular"), local("TT-Norms-Pro-Regular"), url("/fonts/TTNormsPro-Regular.woff2") format("woff2"), url("/fonts/TTNormsPro-Regular.woff") format("woff"), url("/fonts/TTNormsPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Norms Pro Bold";
+  src: local("TT Norms Pro Bold"), local("TT-Norms-Pro-Bold"), url("/fonts/TTNormsPro-Bold.woff2") format("woff2"), url("/fonts/TTNormsPro-Bold.woff") format("woff"), url("/fonts/TTNormsPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  max-width: 1920px;
+  font-family: "TT Norms Pro Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1;
+          flex: 0 1;
+  min-height: 100%;
+}
+
+._container {
+  max-width: 1296px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.display-none {
+  display: none;
+}
+
+/* element */
+.header {
+  margin: 12px 0px;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__left-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -10px;
+}
+
+.header__logo {
+  max-height: 60px;
+}
+
+.header__logo-img img {
+  height: 47px;
+  width: 71px;
+}
+
+.header__about-company {
+  padding: 0;
+  margin-left: 10px;
+}
+
+.header__about-company__p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  padding: 0;
+  margin: 0;
+}
+
+.header__about-company__text__1 {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.header__right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: -10px;
+}
+
+.header__write-to-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__humen {
+  max-height: 45px;
+}
+
+.header__humen__img {
+  border-radius: 50%;
+}
+
+.header__humen {
+  position: relative;
+}
+
+.header__humen::after {
+  position: absolute;
+  content: "";
+  background-color: #8FDA0A;
+  top: 4px;
+  right: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.header__messengers {
+  display: block;
+  margin-left: 8px;
+}
+
+.header__messengers__p {
+  font-size: 12px;
+}
+
+.header__messengers__flex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.header__messengers__a {
+  display: block;
+}
+
+.header__messengers__a__none {
+  display: none;
+}
+
+.header__icon {
+  width: 25px;
+  height: 25px;
+}
+
+.header__business-hours-telephone {
+  margin-left: 40px;
+}
+
+.header__business-hours-telephone__p {
+  font-size: 12px;
+}
+
+.header__tell a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__tell__number {
+  font-family: "TT Norms Pro Bold";
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  margin-left: 3px;
+}
+
+.header__tell-svg {
+  height: 19px;
+  width: 19px;
+}
+
+.button {
+  padding: 15px 17px;
+  font-family: "TT Norms Pro Bold";
+  font-size: 13px;
+  display: inline-block;
+  color: #ffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#DF493D), to(#EB6830));
+  background: linear-gradient(180deg, #DF493D 0%, #EB6830 100%);
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.button:hover, .button:focus {
+  color: #a9d9b0;
+  -webkit-box-shadow: -1px 1px 2px #43ae29;
+          box-shadow: -1px 1px 2px #43ae29;
+  background-color: #e3f7de;
+}
+
+.button:active {
+  color: #71e71d;
+  -webkit-box-shadow: -2px 4px 8px #19cf1c;
+          box-shadow: -2px 4px 8px #19cf1c;
+  background-color: #12bf6e;
+}
+
+.header__button {
+  margin-left: 40px;
+}
+
+@media (max-width: 960px) {
+  .header__button {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header__button {
+    display: none;
+  }
+
+  .header__business-hours-telephone {
+    display: none;
+  }
+
+  .header__messengers__p {
+    display: none;
+  }
+
+  .header__humen {
+    display: none;
+  }
+
+  .header__messengers__flex {
+    -ms-grid-columns: 1fr 17px 1fr 17px 1fr 17px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 17px;
+  }
+
+  .header__icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  #telegram {
+    width: 75px;
+    height: 75px;
+  }
+
+  .header__about-company {
+    display: none;
+  }
+
+  .header__messengers__a__none {
+    display: block;
+  }
+}

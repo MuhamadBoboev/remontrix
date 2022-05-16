@@ -1,0 +1,194 @@
+
+.header {
+  margin: 12px 0px;
+  // height: 60px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+._container {
+}
+.header__left-section {
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
+}
+.header__logo {
+  max-height: 60px;
+
+}
+.header__logo-img img {
+  height: 47px;
+  width: 71px;
+}
+.header__about-company {
+  padding: 0;
+  margin-left: 10px;
+
+}
+.header__about-company__p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  padding: 0;
+  margin: 0;
+  // background-color: green;
+}
+.header__about-company__text {
+
+}
+.header__about-company__text__1 {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+
+}
+.header__right-section {
+  display: flex;
+  align-items: center;
+  margin-right: -10px;
+
+}
+.header__write-to-us {
+  display: flex;
+  align-items: center;
+}
+.header__humen {
+  max-height: 45px;
+}
+.header__humen__img {
+  border-radius: 50%;
+}
+.header__humen {
+  position: relative;
+}
+.header__humen::after {
+  position: absolute;
+  content: "";
+  background-color: #8FDA0A ;
+  top: 4px;
+  right: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.header__messengers {
+  display: block;
+  margin-left: 8px;
+}
+.header__messengers__p {
+  font-size: 12px;
+
+}
+.header__messengers__flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+.header__messengers__a{
+  display: block;
+}
+.header__messengers__a__none {
+  display: none;
+}
+.header__icon {
+  width: 25px;
+  height: 25px;
+}
+.header__icon-telegram {
+}
+.header__icon-whatsapp {
+}
+.header__icon-viber {
+}
+.header__business-hours-telephone {
+  margin-left: 40px;
+}
+.header__business-hours-telephone__p {
+  font-size: 12px;
+
+}
+.phone {
+}
+.header__tell {
+  a {
+    display: flex;
+    align-items: center;
+  }
+}
+.header__tell__number {
+  font-family: 'TT Norms Pro Bold';
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  margin-left: 3px;
+}
+.header__tell-svg {
+  height: 19px;
+  width: 19px;
+}
+.button {
+  padding: 15px 17px;
+  font-family: 'TT Norms Pro Bold';
+  font-size: 13px;
+  display: inline-block;
+  color: #ffff;
+  background: linear-gradient(180deg, #DF493D 0%, #EB6830 100%);
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+.button:hover, .button:focus {
+  color: rgb(169, 217, 176);
+  box-shadow: -1px 1px 2px hsla(108, 62%, 42%, 1);
+  background-color: hsla(108, 62%, 92%, 1)
+}
+.button:active {
+  color: rgb(113, 231, 29);
+  box-shadow: -2px 4px 8px rgb(25, 207, 28);
+  background-color: rgb(18, 191, 110);
+}
+.header__button {
+  margin-left: 40px ;
+}
+@media (max-width:960px) {
+  .header__button{
+    display: none;
+  }
+}
+@media (max-width:768px) {
+  .header__button{
+    display: none;
+  }
+  .header__business-hours-telephone{
+    display: none;
+  }
+  .header__messengers__p {
+    display: none;
+  }
+  .header__humen {
+    display: none;
+  }
+  .header__messengers__flex {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 17px;
+  }
+  #telegram {
+  }
+  .header__icon {
+    width: 28px;
+    height: 28px;
+  }
+  #telegram {
+    width: 75px;
+    height: 75px;
+  }
+  .header__about-company{
+    display: none;
+  }
+  .header__messengers__a__none {
+    display: block;
+  }
+}
+#telegram {
+}

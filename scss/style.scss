@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'TT Norms Pro Regular';
+  src: local('TT Norms Pro Regular'), local('TT-Norms-Pro-Regular'),
+      url('/fonts/TTNormsPro-Regular.woff2') format('woff2'),
+      url('/fonts/TTNormsPro-Regular.woff') format('woff'),
+      url('/fonts/TTNormsPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Norms Pro Bold';
+  src: local('TT Norms Pro Bold'), local('TT-Norms-Pro-Bold'),
+      url('/fonts/TTNormsPro-Bold.woff2') format('woff2'),
+      url('/fonts/TTNormsPro-Bold.woff') format('woff'),
+      url('/fonts/TTNormsPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+body {
+  max-width: 1920px;
+  // height: 100%;
+  font-family: 'TT Norms Pro Regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0 auto;
+
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 0 1;
+  min-height: 100%;
+}
+._container {
+  max-width: 1296px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+.display-none {
+  display: none
+}
+/* element */
+.button {
+
+}
+@import 'header';
