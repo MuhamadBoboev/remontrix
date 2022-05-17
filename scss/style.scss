@@ -25,9 +25,8 @@ body {
   font-family: 'TT Norms Pro Regular';
   font-size: 16px;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 130%;
   margin: 0 auto;
-
   padding: 0;
 }
 .wrapper {
@@ -35,7 +34,6 @@ body {
   flex-direction: column;
   overflow: hidden;
   flex: 0 1;
-  min-height: 100%;
 }
 ._container {
   max-width: 1296px;
@@ -49,4 +47,21 @@ body {
 .button {
 
 }
+/* ************** mixin ***************** */
+$fontTTNormsProRegular: 'TT Norms Pro Regular';
+$fontTTNormsProBold: 'TT Norms Pro Bold';
+@mixin font($family, $size) {
+  font-family: $family;
+  font-size: $size;
+  line-height: 130%;
+}
+/* ************** import **************** */
+
+/* ************** header **************** */
 @import 'header';
+
+/* ************** pages ***************** */
+.pages {
+  flex: 1 1 auto
+}
+@import 'main-block';
