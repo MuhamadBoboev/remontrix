@@ -8,7 +8,7 @@
 }
 .main-block__body {
   // position: relative;
-  padding: 105px 0px 400px 0px;
+  padding: 105px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -61,7 +61,7 @@
   @include font($fontTTNormsProBold, 16)
 }
 .main-block__footer {
-
+  margin-bottom: 70px;
 }
 .main-block__button {
   margin-top: 40px;
@@ -70,6 +70,7 @@
 
 .main-block__img-man {
   display: flex;
+  align-items: flex-end;
   flex: 0 1 40%;
   // position: relative;
   // flex: 0 1 40%;
@@ -179,7 +180,7 @@
   .main-block__body {
     flex-wrap: wrap;
     text-align: center;
-    padding: 105px 0px 100px 0px;
+    padding: 105px 0px 0px 0px;
   }
   .main-block__title {
     display: block;

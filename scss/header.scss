@@ -201,3 +201,9 @@
     display: block;
   }
 }
+
+@media (max-width:600px) {
+  .form-block__title__p {
+    font-size: 22px;
+  }
+}
