@@ -47,14 +47,18 @@ optionList.forEach( o => {
   })
 } )
 
-const tellFormBlock = document.querySelector('.form-block__input_tell');
+const tellFormBlock = document.querySelectorAll('.form-block__input_tell');
 
-tellFormBlock.addEventListener('focus', ()=> {
-  tellFormBlock.setAttribute('value','+7');
+tellFormBlock.forEach(function(event) {
+  event.addEventListener('focus', ()=> {
+      event.setAttribute('value','+7');
 
-  console.log('ha');
-});
-tellFormBlock.addEventListener('blur', ()=> {
-  tellFormBlock.removeAttribute('value','+7');
-  console.log('ne');
+      console.log('ha');
+    });
+    event.addEventListener('blur', ()=> {
+      event.removeAttribute('value','+7');
+
+      console.log('ha');
+    });
 })
+

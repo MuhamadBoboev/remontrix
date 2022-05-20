@@ -1,0 +1,124 @@
+.page__service-order {
+  margin-top: 130px;
+  margin-bottom: 50px;
+}
+.container_service-order {
+  display: flex;
+}
+.service-order__block-text {
+  padding-top: 60px;
+  padding-right: 55px;
+  display: flex;
+  flex-direction: column;
+
+}
+.service-order__text-p {
+  @include font($fontTTNormsProRegular, 36px)
+}
+.service-order__text-strong {
+  @include font($fontTTNormsProBold, 36px)
+}
+.service-order__text-normal {
+  margin-top: 30px;
+  @include font($fontTTNormsProRegular, 24px)
+}
+.service-order__text-block-small {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.service-order__text-block-small__p {
+  @include font($fontTTNormsProRegular, 16px)
+}
+.service-order__text-block-small__span {
+  // display: inline-block;
+  margin-left: 10px;
+}
+.service-order__application {
+  padding-left: 55px;
+  padding-top: 60px;
+}
+.application-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-top: 30px;
+  grid-gap: 10px;
+}
+.application-form__input {
+  width: -webkit-fill-available;
+}
+
+@media (max-width: 1200px) {
+  .service-order__block-phone {
+    display: none;
+  }
+  .container_service-order {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+  }
+  .service-order__block-text {
+    padding: 0;
+  }
+  .service-order__application {
+    padding: 0;
+  }
+}
+@media (max-width: 960px) {
+  .service-order__block-phone {
+    display: none;
+  }
+  .container_service-order {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    padding: 0 10px;
+  }
+  .service-order__block-text {
+    padding: 0;
+  }
+  .service-order__application {
+    padding: 0;
+  }
+  .service-order__text-p {
+    text-align: center;
+  }
+  .service-order__text-normal {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .service-order__block-phone {
+    display: none;
+  }
+  .container_service-order {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
+  .service-order__block-text {
+    padding: 0;
+  }
+  .service-order__application {
+    padding: 0;
+  }
+  .service-order__text-p {
+    font-size: 22px;
+  }
+  .service-order__text-strong {
+    font-size: 22px;
+  }
+  .service-order__text-normal {
+    font-size: 16px;
+  }
+  .service-order__text-block-small__span {
+   font-size: 14px;
+  }
+}
