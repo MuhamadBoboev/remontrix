@@ -1,6 +1,5 @@
 .page__service-order {
   margin-top: 130px;
-  margin-bottom: 50px;
 }
 .container_service-order {
   display: flex;
@@ -11,6 +10,9 @@
   display: flex;
   flex-direction: column;
 
+}
+.service-order__phone-img {
+  max-height: 609px;
 }
 .service-order__text-p {
   @include font($fontTTNormsProRegular, 36px)
@@ -53,6 +55,9 @@
 }
 
 @media (max-width: 1200px) {
+  .page__service-order {
+    margin-bottom: 50px;
+  }
   .service-order__block-phone {
     display: none;
   }

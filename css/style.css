@@ -1601,7 +1601,6 @@ body {
 }
 .page__service-order {
   margin-top: 130px;
-  margin-bottom: 50px;
 }
 
 .container_service-order {
@@ -1620,6 +1619,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.service-order__phone-img {
+  max-height: 609px;
 }
 
 .service-order__text-p {
@@ -1706,6 +1709,10 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .page__service-order {
+    margin-bottom: 50px;
+  }
+
   .service-order__block-phone {
     display: none;
   }
@@ -1821,6 +1828,10 @@ body {
 }
 /************* main-block **************** */
 /********************************** foter **********************************/
+footer {
+  background-color: #222222;
+}
+
 .container_footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1831,7 +1842,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #222222;
 }
 
 .footer__block-logo {

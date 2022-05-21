@@ -12,7 +12,6 @@ formInputNone.value=selected.querySelectorAll('span')[1].innerText
 const mediaQuery = window.matchMedia('(max-width: 768px)')
 function handleTabletChange(e) {
   if (e.matches) {
-    console.log('Media Query Matched!');
     document.querySelectorAll('.header__icon').forEach(function (event) {
       event.setAttribute("transform", "scale(1.6)")
     })
