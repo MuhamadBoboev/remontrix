@@ -15,8 +15,8 @@
 <body>
 
     <svg display="none" >
-      <symbol  id="telegram" width="41" height="41"  viewBox="0 0 41 41"  fill="none" xmlns="http://www.w3.org/2000/svg" >
-        <g transform="translate(12,12)"></g>
+      <symbol  id="telegram" width="25" height="25"  viewBox="0 0 25 25"  fill="none" xmlns="http://www.w3.org/2000/svg" >
+
         <path d="M12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 0 12.5C0 19.4036 5.59644 25 12.5 25Z" fill="#1C8ADB"/>
         <path d="M19.3096 6.46306L19.0511 6.55681L5.01987 11.6122C4.92044 11.643 4.83402 11.7058 4.77415 11.791C4.71429 11.8761 4.68437 11.9787 4.68908 12.0827C4.69379 12.1866 4.73287 12.2861 4.80019 12.3655C4.8675 12.4449 4.95926 12.4997 5.06106 12.5213L8.69316 13.5156L9.37072 15.5043L10.0483 17.4929C10.0872 17.5904 10.1493 17.6769 10.2293 17.7449C10.3092 17.8129 10.4046 17.8604 10.507 17.8832C10.6095 17.906 10.716 17.9035 10.8172 17.8758C10.9185 17.8482 11.0114 17.7962 11.088 17.7244L12.9645 15.9517L16.6491 18.4503C17.0994 18.7571 17.7415 18.5298 17.8565 18.0241L20.2969 7.24147C20.4162 6.70738 19.8537 6.26846 19.3096 6.46306ZM17.5184 8.85653L11.179 14.0383L10.8807 14.2827C10.8151 14.3346 10.7724 14.41 10.7613 14.4929L10.6946 15.044L10.5113 16.5923C10.5129 16.6112 10.5068 16.6298 10.4946 16.6442C10.4823 16.6586 10.4648 16.6675 10.446 16.669C10.4272 16.6705 10.4085 16.6645 10.3941 16.6522C10.3797 16.64 10.3708 16.6225 10.3693 16.6037L9.85367 15.0568L9.321 13.473C9.29848 13.4018 9.30147 13.325 9.32947 13.2558C9.35747 13.1865 9.40872 13.1293 9.47441 13.0937L16.071 9.31249L17.3125 8.60227C17.4929 8.49715 17.6775 8.72585 17.5184 8.85653Z" fill="white"/>
       </symbol>
@@ -227,6 +227,7 @@
               </p>
             </div>
             <form action="https://echo.htmlacademy.ru" method="post" class="form-block__grid">
+              <input name="How-to-contact" class="form-block__input-none display-none">
               <div class="form-block__form">
                 <label class="form-block__label">С каким вопросом Вы столкнулись?</label>
                 <input class="form-block__input" type="text" placeholder="Ввод текста" name="question: " id="form-block__form" required >
@@ -235,27 +236,28 @@
                 <label class="form-block__label" >Как с Вами связаться?</label>
 
                 <div class="form-block__select-box">
-                  <div class="form-block__selected form-block__selected_main">
-                    <input name="How-to-contact" class="form-block__input-none display-none">
-                    <svg class="form-block__icon " style="width: 25;height: 25;" >
+                  <div class="form-block__selected form-block__selected_main ">
+
+
+                    <svg class="form-block__icon form-block__icon-main" style="width: 25;height: 25;" >
                       <use  xlink:href="#whatsapp">
                       </use>
                     </svg>
                     <span class="form-block__selected__span-1">Связаться по </span><span class="form-block__selected__span-2">WhatsApp</span>
                   </div>
                   <div class="form-block__options-container ">
-                    <div class="form-block__option ">
-                      <input type="radio" class="form-block__radio"  name="WhatsApp">
-                      <label class="form-block__selected__label" name="whatsapp" >
+                    <!-- <div class="form-block__option form-block__option_whatsapp">
+                      <input type="radio" class="form-block__radio" name="WhatsApp" value="whatsapp">
+                      <label class="form-block__selected__label"  name="whatsapp" >
                         <svg class="form-block__icon " style="width: 25;height: 25;">
                           <use  xlink:href="#whatsapp">
                           </use>
                         </svg>
                         <span class="form-block__selected__span-1">Связаться по </span><span class="form-block__selected__span-2">WhatsApp</span>
                       </label>
-                    </div>
+                    </div> -->
                     <div class="form-block__option">
-                      <input type="radio" class="form-block__radio" name="category">
+                      <input type="radio" class="form-block__radio" name="category" value="telegram">
                       <label class="form-block__selected__label" >
                         <svg class="form-block__icon " style="width: 25;height: 25;">
                           <use  xlink:href="#telegram">
@@ -265,8 +267,8 @@
                       </label>
                     </div>
                     <div class="form-block__option">
-                      <input type="radio" class="form-block__radio" name="category">
-                      <label class="form-block__selected__label" >
+                      <input type="radio" class="form-block__radio" name="category" value="viber">
+                      <label class="form-block__selected__label"  >
                         <svg class="form-block__icon " style="width: 25;height: 25;">
                           <use  xlink:href="#viber">
                           </use>
@@ -406,11 +408,13 @@
                 <p class="suggestions__mini-block__title" >
                   Оптимизация сайтов
                 </p>
-                <p class="suggestions__mini-block__suptitle">
-                  «Лечение» вирусов,
-                  SEO-оптимизация, устранение
-                  ошибок верстки
-                </p>
+                <div class="suggestions__mini-block__suptitle-block">
+                  <p class="suggestions__mini-block__suptitle">
+                    «Лечение» вирусов,
+                    SEO-оптимизация, устранение
+                    ошибок верстки
+                  </p>
+                </div>
                 <button type="submit" class="button suggestions__button">Заказать услугу</button>
               </div>
               <div class="suggestions__block-flex__img">
@@ -424,11 +428,13 @@
                 <p class="suggestions__mini-block__title" >
                   Интеграция с системами
                 </p>
-                <p class="suggestions__mini-block__suptitle">
-                  Интеграция с различными
-                  системами оплаты и доставки,
-                  в том числе API-интерграцию
-                </p>
+                <div class="suggestions__mini-block__suptitle-block">
+                  <p class="suggestions__mini-block__suptitle">
+                    Интеграция с различными
+                    системами оплаты и доставки,
+                    в том числе API-интерграцию
+                  </p>
+                </div>
                 <button type="submit" class="button suggestions__button">Заказать услугу</button>
               </div>
               <div class="suggestions__block-flex__img">
@@ -442,11 +448,13 @@
                 <p class="suggestions__mini-block__title" >
                   Настройка рекламы
                 </p>
-                <p class="suggestions__mini-block__suptitle">
-                  Настройка рекламы в Яндекс,
-                  VK, FB, Google с модерацией
-                  и без ограничений
-                </p>
+                <div class="suggestions__mini-block__suptitle-block">
+                  <p class="suggestions__mini-block__suptitle">
+                    Настройка рекламы в Яндекс,
+                    VK, FB, Google с модерацией
+                    и без ограничений
+                  </p>
+                </div>
                 <button type="submit" class="button suggestions__button">Заказать услугу</button>
               </div>
               <div class="suggestions__block-flex__img">
@@ -460,11 +468,13 @@
                 <p class="suggestions__mini-block__title" >
                   Рассылка в месседжерах
                 </p>
-                <p class="suggestions__mini-block__suptitle">
-                  Рассылки в мессенджерах
-                  (WhatsApp, Telegram и пр).
-                  Настройка чат-ботов.
-                </p>
+                <div class="suggestions__mini-block__suptitle-block">
+                  <p class="suggestions__mini-block__suptitle">
+                    Рассылки в мессенджерах
+                    (WhatsApp, Telegram и пр).
+                    Настройка чат-ботов.
+                  </p>
+                </div>
                 <button type="submit" class="button suggestions__button">Заказать услугу</button>
               </div>
               <div class="suggestions__block-flex__img">
@@ -498,7 +508,7 @@
             </p>
             <div class="service-order__text-block-small">
               <p class="service-order__text-block-small__p">
-                <svg class="service-order__icon-vector" style="width: 15;height: 13;">
+                <svg class="service-order__icon-vector" style="width: 15px;height: 13px;">
                   <use  xlink:href="#vector" >
                   </use>
                 </svg>
@@ -507,7 +517,7 @@
                 </span>
               </p>
               <p class="service-order__text-block-small__p">
-                <svg class="service-order__icon-vector" style="width: 15;height: 13;">
+                <svg class="service-order__icon-vector" style="width: 15px;height: 13px;">
                   <use  xlink:href="#vector" >
                   </use>
                 </svg>
@@ -516,7 +526,7 @@
                 </span>
               </p>
               <p class="service-order__text-block-small__p">
-                <svg class="service-order__icon-vector" style="width: 15;height: 13;">
+                <svg class="service-order__icon-vector" style=" width: 15px;height: 13px;">
                   <use  xlink:href="#vector" >
                   </use>
                 </svg>
@@ -612,25 +622,25 @@
         <div class="footer__block-programs">
           <div class="footer__block-programs__grid">
             <a href="tg://resolve?domain=boboevMM" >
-              <svg class="footer__icon " style="width: 40;height: 40;">
+              <svg class="footer__icon " style="width: 40px;height: 40px;">
                 <use xlink:href="#footerTelegram">
                 </use>
               </svg>
             </a>
             <a  href="https://wa.me/%2B79169480428" >
-              <svg class="footer__icon " style="width: 40;height: 40;">
+              <svg class="footer__icon " style="width: 40px;height: 40px;">
                 <use xlink:href="#footerWhatsapp">
                 </use>
               </svg>
             </a>
             <a href="viber://chat?number=%2B79001234567" >
-              <svg class="footer__icon " style="width: 40;height: 40;">
+              <svg class="footer__icon " style="width: 40px;height: 40px;">
                 <use xlink:href="#footerViber">
                 </use>
               </svg>
             </a>
             <a href="http://www.facebook.com.vn" >
-              <svg class="footer__icon " style="width: 40;height: 40;">
+              <svg class="footer__icon " style="width: 40px;height: 40px;">
                 <use xlink:href="#footerFacebook">
                 </use>
               </svg>

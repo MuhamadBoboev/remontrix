@@ -123,18 +123,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .header__write-to-us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .header__humen {
@@ -147,6 +147,7 @@ body {
 
 .header__humen {
   position: relative;
+  background-color: #DF493D;
 }
 
 .header__humen::after {
@@ -163,6 +164,7 @@ body {
 .header__messengers {
   display: block;
   margin-left: 8px;
+  background-color: #DF493D;
 }
 
 .header__messengers__p {
@@ -170,6 +172,7 @@ body {
 }
 
 .header__messengers__flex {
+  height: 26px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 5px 1fr 5px 1fr;
@@ -192,12 +195,16 @@ body {
 
 .header__business-hours-telephone {
   margin-left: 40px;
+  background-color: #3ddf45;
 }
 
 .header__business-hours-telephone__p {
   font-size: 12px;
 }
 
+.header__tell {
+  height: 24px;
+}
 .header__tell a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -980,6 +987,10 @@ body {
   color: #0172CE;
 }
 
+.form-block__option_whatsapp.display-none {
+  display: none;
+}
+
 @media (max-width: 1100px) {
   .form-block__grid {
     -ms-grid-columns: 2fr 2fr;
@@ -1542,6 +1553,20 @@ body {
   line-height: 130%;
 }
 
+.suggestions__mini-block__suptitle-block {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .suggestions__mini-block__suptitle {
   font-family: "TT Norms Pro Regular";
   font-size: 16px;
@@ -1706,6 +1731,11 @@ body {
 
 .application-form__input {
   width: -webkit-fill-available;
+  width: -moz-available;
+}
+
+.application-form__submit {
+  font-size: 18px;
 }
 
 @media (max-width: 1200px) {
@@ -1822,6 +1852,10 @@ body {
     font-size: 16px;
   }
 
+  .application-form__submit {
+    font-size: 16px;
+  }
+
   .service-order__text-block-small__span {
     font-size: 14px;
   }
@@ -1863,14 +1897,14 @@ footer {
 
 .footer__block-logo__text__p {
   font-family: "TT Norms Pro Regular";
-  font-size: 12px;
+  font-size: 13px;
   line-height: 130%;
   color: #fff;
 }
 
 .footer__block-logo__text__strong {
   font-family: "TT Norms Pro Bold";
-  font-size: 12px;
+  font-size: 13px;
   line-height: 130%;
   color: #fff;
 }
@@ -1878,7 +1912,7 @@ footer {
 .footer__center-text {
   text-align: center;
   font-family: "TT Norms Pro Regular";
-  font-size: 12px;
+  font-size: 13px;
   line-height: 130%;
   color: #fff;
 }
@@ -1946,5 +1980,17 @@ footer {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+
+  .footer__block-logo__text__p {
+    font-size: 12px;
+  }
+
+  .footer__block-logo__text__strong {
+    font-size: 12px;
+  }
+
+  .footer__center-text {
+    font-size: 12px;
   }
 }

@@ -18,16 +18,16 @@ footer {
   margin-left: 10px
 }
 .footer__block-logo__text__p {
-  @include font($fontTTNormsProRegular, 12px);
+  @include font($fontTTNormsProRegular, 13px);
   color:#fff;
 }
 .footer__block-logo__text__strong {
-  @include font($fontTTNormsProBold, 12px);
+  @include font($fontTTNormsProBold, 13px);
   color: #fff;
 }
 .footer__center-text {
   text-align: center;
-  @include font ($fontTTNormsProRegular, 12px);
+  @include font ($fontTTNormsProRegular, 13px);
   color: #fff;
 }
 .footer__block-logo__img {
@@ -56,4 +56,14 @@ footer {
     margin-bottom: 30px;
     order: 1;
   }
+  .footer__block-logo__text__p {
+    font-size: 12px;
+  }
+  .footer__block-logo__text__strong {
+    font-size: 12px;
+  }
+  .footer__center-text {
+    font-size: 12px;
+  }
+
 }

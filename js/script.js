@@ -7,7 +7,6 @@ const optionList = document.querySelectorAll('.form-block__option');
 
 let salom = document.querySelector('#telegram');
 
-formInputNone.value=selected.querySelectorAll('span')[1].innerText
 
 const mediaQuery = window.matchMedia('(max-width: 768px)')
 function handleTabletChange(e) {
@@ -16,13 +15,10 @@ function handleTabletChange(e) {
       event.setAttribute("transform", "scale(1.6)")
     })
 
-    // telegram.style.transform.style='1.5'
-    // telegram.setAttribute("viewBox", "0 0 " + 60 + " " + 60)
   } else {
     document.querySelectorAll('.header__icon').forEach(function (event) {
       event.setAttribute("transform", "scale(1)")
     })
-    // telegram.setAttribute("viewBox", "0 0 " + 20 + " " + 20)
   }
 }
 mediaQuery.addListener(handleTabletChange)
@@ -30,16 +26,21 @@ handleTabletChange(mediaQuery)
 
 
 
-formInputNone.value=selected.querySelectorAll('span')[1].innerText
+formInputNone.value=selected.querySelectorAll('span')[1].innerText;
+
 selected.addEventListener('click', ()=> {
   optionContainer.classList.toggle('active');
   selected.classList.toggle('active')
 });
+
 optionList.forEach( o => {
   o.addEventListener('click', () => {
-
+    let selectedCope = selected.innerHTML;
     selected.innerHTML = o.querySelector('label').innerHTML;
+    o.querySelector('label').innerHTML= selectedCope;
     formInputNone.value=selected.querySelectorAll('span')[1].innerText
+
+
     optionContainer.classList.remove('active');
     selected.classList.remove('active');
     telProgForm.innerText = selected.querySelectorAll('span')[1].innerText

@@ -232,6 +232,12 @@
 .form-block__button-info__a {
   color: #0172CE;
 }
+.form-block__option_whatsapp.display-none {
+  display: none;
+}
+
+
+
 @media (max-width:1100px) {
   .form-block__grid {
     grid-template-columns: 2fr 2fr;
