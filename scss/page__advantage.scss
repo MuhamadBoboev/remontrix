@@ -50,8 +50,15 @@
 }
 .advantage__causes__block-text {
   margin-top: 20px;
+
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: end;
+  // background-color: rgb(67, 200, 26);
+  // height: 100%;4
 }
 .advantage__causes__strong {
+  // display: block;
   @include font($fontTTNormsProBold, 18px)
 }
 .advantage__causes__text {
@@ -176,5 +183,10 @@
   }
   .advantage__causes__strong {
     font-size: 14px;
+  }
+}
+@media (max-width:342px) {
+  .advantage__causes__text_first {
+    margin-top: 31px;
   }
 }

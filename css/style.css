@@ -1389,6 +1389,11 @@ body {
     font-size: 14px;
   }
 }
+@media (max-width: 342px) {
+  .advantage__causes__text_first {
+    margin-top: 31px;
+  }
+}
 /* **************** page__suggestions ************* */
 .page__suggestions {
   margin-top: 50px;
@@ -1533,7 +1538,6 @@ body {
 }
 
 .suggestions__block-img img {
-  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
