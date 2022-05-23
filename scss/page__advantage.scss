@@ -50,7 +50,7 @@
 }
 .advantage__causes__block-text {
   margin-top: 20px;
-
+  height: 100%;
   // display: flex;
   // flex-direction: column;
   // justify-content: end;
@@ -59,11 +59,14 @@
 }
 .advantage__causes__strong {
   // display: block;
+  display: block;
+  height: 50%;
   @include font($fontTTNormsProBold, 18px)
 }
 .advantage__causes__text {
   display: block;
   margin-top: 10px;
+  // height: 50%;
   @include font($fontTTNormsProRegular, 14px)
 
 }
@@ -103,7 +106,7 @@
     grid-column-gap: 30px;
   }
   .advantage__fon {
-    margin-top: 10px;
+    margin-top: 40px;
     position: relative;
     display: flex;
     flex: 1 1 100%;
@@ -152,6 +155,8 @@
   }
   .advantage__causes__block-text {
     margin-top: 10px;
+    height: 100%;
+    display: block;
   }
   .advantage__fon {
     position: relative;
@@ -161,6 +166,7 @@
     padding: 210px 0;
     max-height: none;
     max-width: none;
+    margin-top: 20px;
   }
   .advantage__fon img {
     position: absolute;
@@ -184,9 +190,16 @@
   .advantage__causes__strong {
     font-size: 14px;
   }
+
 }
+@media (max-width:723px) {
+  .advantage__causes__text {
+    margin-top: 0;
+  }
+}
+
 @media (max-width:342px) {
   .advantage__causes__text_first {
-    margin-top: 31px;
+    // margin-top: 31px;
   }
 }

@@ -1171,9 +1171,12 @@ body {
 
 .advantage__causes__block-text {
   margin-top: 20px;
+  height: 100%;
 }
 
 .advantage__causes__strong {
+  display: block;
+  height: 50%;
   font-family: "TT Norms Pro Bold";
   font-size: 18px;
   line-height: 130%;
@@ -1258,7 +1261,7 @@ body {
   }
 
   .advantage__fon {
-    margin-top: 10px;
+    margin-top: 40px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1347,6 +1350,8 @@ body {
 
   .advantage__causes__block-text {
     margin-top: 10px;
+    height: 100%;
+    display: block;
   }
 
   .advantage__fon {
@@ -1361,6 +1366,7 @@ body {
     padding: 210px 0;
     max-height: none;
     max-width: none;
+    margin-top: 20px;
   }
 
   .advantage__fon img {
@@ -1389,9 +1395,9 @@ body {
     font-size: 14px;
   }
 }
-@media (max-width: 342px) {
-  .advantage__causes__text_first {
-    margin-top: 31px;
+@media (max-width: 723px) {
+  .advantage__causes__text {
+    margin-top: 0;
   }
 }
 /* **************** page__suggestions ************* */
