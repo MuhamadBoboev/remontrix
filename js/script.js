@@ -53,12 +53,10 @@ tellFormBlock.forEach(function(event) {
   event.addEventListener('focus', ()=> {
       event.setAttribute('value','+7');
 
-      console.log('ha');
     });
     event.addEventListener('blur', ()=> {
       event.removeAttribute('value','+7');
 
-      console.log('ha');
     });
 })
 
