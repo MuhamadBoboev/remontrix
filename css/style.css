@@ -310,6 +310,13 @@ body {
   .form-block__title__p {
     font-size: 22px;
   }
+
+  .header__right-section {
+    display: inherit;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /* ************** pages ***************** */
 .pages {
@@ -2040,6 +2047,7 @@ footer {
 }
 
 .popup__content {
+  margin-top: -50%;
   background-color: white;
   color: black;
   max-width: 800px;
@@ -2051,6 +2059,9 @@ footer {
           transform: translate(0px, -100%);
   -webkit-transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
           transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  -webkit-box-shadow: 0px 0px 57px 27px rgba(246, 249, 251, 0.21);
+  box-shadow: 0px 0px 57px 27px rgba(246, 249, 251, 0.21);
+  border-radius: 15px;
 }
 
 .popup__close {

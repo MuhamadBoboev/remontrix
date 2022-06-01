@@ -6,14 +6,17 @@ const lockPadding = document.querySelectorAll('.lock-padding')
 popupLinks.forEach(function(e){
   e.addEventListener('click', function(){
     let headerBlock = document.querySelector('.header-container');
-    const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
-    body.style.paddingRight =  lockPaddingValue;
+    let html = document.documentElement;
+    // const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+    let marginSize = window.innerWidth - html.clientWidth
+
+    body.style.paddingRight =  marginSize + 'px';
     headerBlock.style.marginLeft = 18 + 'px';
     headerBlock.style.marginRight = 18 + 'px';
     body.style.overflow='hidden';
     popup.classList.add('open');
 
-    closePopup = document.querySelector('.close-popup');
+    // closePopup = document.querySelector('.close-popup');
 
     popup.addEventListener('click', function(){
       popup.classList.remove('open');
@@ -22,10 +25,10 @@ popupLinks.forEach(function(e){
 
     })
 
-    closePopup.addEventListener('click', function(){
-      popup.classList.remove('open');
-      body.style.overflow='hidden';
-    })
+    // closePopup.addEventListener('click', function(){
+    //   popup.classList.remove('open');
+    //   body.style.overflow='hidden';
+    // })
 
   })
 })

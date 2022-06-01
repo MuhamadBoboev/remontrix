@@ -54,7 +54,6 @@
   display: flex;
   align-items: flex-end;
   // margin-right: -10px;
-
 }
 .header__write-to-us {
   display: flex;
@@ -208,5 +207,10 @@
 @media (max-width:600px) {
   .form-block__title__p {
     font-size: 22px;
+  }
+  .header__right-section {
+    display: inherit;
+    align-items: center;
+    // margin-right: -10px;
   }
 }
